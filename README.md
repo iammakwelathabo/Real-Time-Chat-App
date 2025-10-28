@@ -41,12 +41,12 @@ Powered by **Laravel Reverb**, all events are broadcast instantly:
 |-------|-------------|
 | **Backend** | Laravel 11 |
 | **Realtime Engine** | Laravel Reverb |
-| **Frontend** | Blade + Alpine.js / Vanilla JS |
+| **Frontend** | Blade + Vanilla JS |
 | **Database** | MySQL / MariaDB |
 | **Broadcast Driver** | Reverb (WebSocket-based) |
-| **Authentication** | Laravel Breeze / Jetstream |
+| **Authentication** | Laravel Breeze |
 | **Storage** | Eloquent ORM |
-| **Environment** | PHP 8.3+, Node.js 18+ |
+| **Environment** | PHP 8.3+|
 
 ---
 
