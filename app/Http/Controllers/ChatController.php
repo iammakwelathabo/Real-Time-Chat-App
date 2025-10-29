@@ -73,14 +73,17 @@ class ChatController extends Controller
             })
             ->first();
 
-        // Create new chat if none exists
+        // ✅ Place the fix here: create new chat if none exists
         if (!$chat) {
-            $chat = Chat::create(['is_group' => false]);
+            $chat = new Chat(['is_group' => false]);
+            $chat->save(); // Make sure the chat is saved in the database
             $chat->users()->attach([$currentUser->id, $user->id]);
         }
 
-        return redirect()->route('chats.show', $chat);
+        // Redirect using chat ID to avoid route-model binding issues
+        return redirect()->route('chats.show', ['chat' => $chat->id]);
     }
+
 
     /**
      * Display the selected chat and its messages.

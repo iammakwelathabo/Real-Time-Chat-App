@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.logo{
+    width:50px!important;
+    margin-top: 15px;
+}

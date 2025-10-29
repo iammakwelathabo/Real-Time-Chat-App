@@ -32,7 +32,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <a href="{{ route('chats.create.private', $user) }}"
+                                <a href="{{ route('chats.start', $user->id) }}"
                                    class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-150 font-semibold">
                                     Start Chat
                                 </a>

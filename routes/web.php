@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ChatController;
 use Illuminate\Support\Facades\Route;
 use App\Events\UserTyping;
 Route::get('/', function () {
@@ -31,7 +32,7 @@ Route::middleware(['auth'])->group(function () {
         ->name('group-chats.show');
 });
 
-
+Route::get('/chats/start/{user}', [ChatController::class, 'createOrGetPrivateChat'])->name('chats.start');
 
 Route::post('/typing', function (Request $request) {
     event(new UserTyping(auth()->user(), $request->chat_id));
