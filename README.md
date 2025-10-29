@@ -120,31 +120,22 @@ Receive broadcast updates.
 Adding/removing members.
 
 License
+
 This project is open-source and available under the MIT License.
 
 Thabo Makwela
+
 Full-Stack Developer
+
 platformdeveloping@gmail.com
 
 
 ## Preview
 
-### Dashboard
-![Dashboard Screenshot](assets/screenshots/Dashboard.png)
-
-### Chat Window
-![Chat Screenshot](assets/screenshots/Chat.png)
-
-### Messages Window
-![Messages Screenshot](assets/screenshots/Messages.png)
-
-### Group Creation Window
-![Group Creation Screenshot](assets/screenshots/Create_Group.png)
-
-### Users Window
-![Users Screenshot](assets/screenshots/users.png)
-
-
 https://github.com/user-attachments/assets/f64723da-b5c3-47b9-acc8-e8258276a586
 
 <img width="1361" height="584" alt="Dashboard" src="https://github.com/user-attachments/assets/f8ce0f43-93dc-4b98-80d0-fa2933438c94" />
+<img width="1346" height="614" alt="Create_Group" src="https://github.com/user-attachments/assets/307f359c-1eb3-4942-b23a-7250c0446334" />
+<img width="1346" height="610" alt="Chats" src="https://github.com/user-attachments/assets/d3716e5c-c5ce-48be-9eea-2f34a3a6b21f" />
+<img width="1349" height="613" alt="Messages" src="https://github.com/user-attachments/assets/520bd42d-feb3-461e-9868-5047b4e5813e" />
+<img width="1352" height="613" alt="Users" src="https://github.com/user-attachments/assets/0dde39ba-3036-4239-b043-89d1a8ad9016" />
