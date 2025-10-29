@@ -127,4 +127,23 @@ Full-Stack Developer
 platformdeveloping@gmail.com
 
 
+## Preview
+
+### Dashboard
+![Dashboard Screenshot](assets/screenshots/Dashboard.png)
+
+### Chat Window
+![Chat Screenshot](assets/screenshots/Chat.png)
+
+### Messages Window
+![Messages Screenshot](assets/screenshots/Messages.png)
+
+### Group Creation Window
+![Group Creation Screenshot](assets/screenshots/Create_Group.png)
+
+### Users Window
+![Users Screenshot](assets/screenshots/users.png)
+
+
+https://github.com/user-attachments/assets/f64723da-b5c3-47b9-acc8-e8258276a586
 
