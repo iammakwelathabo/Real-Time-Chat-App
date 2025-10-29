@@ -147,3 +147,4 @@ platformdeveloping@gmail.com
 
 https://github.com/user-attachments/assets/f64723da-b5c3-47b9-acc8-e8258276a586
 
+<img width="1361" height="584" alt="Dashboard" src="https://github.com/user-attachments/assets/f8ce0f43-93dc-4b98-80d0-fa2933438c94" />
