@@ -18,7 +18,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/chats/{chat}/messages', [ChatController::class, 'storeMessage'])->name('messages.store');
     Route::post('/messages/{message}/read', [ChatController::class, 'markAsRead'])->name('messages.mark-read');
 
-
+    Route::get('/group-chats/create', [GroupChatController::class, 'create'])->name('group-chats.create');
 
 // Group chats
     Route::get('/group-chats/create', [GroupChatController::class, 'create'])->name('group-chats.create');

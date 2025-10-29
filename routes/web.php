@@ -2,16 +2,16 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\GroupChatController;
 use Illuminate\Support\Facades\Route;
 use App\Events\UserTyping;
+
 Route::get('/', function () {
     if (auth()->check()) {
         return redirect()->route('dashboard');
     }
     return redirect()->route('login');
 });
-
-
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
@@ -22,10 +22,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'delete'])->name('profile.destroy');
-
 });
 
 Route::middleware(['auth'])->group(function () {
+
+    Route::get('/group-chats/create', [GroupChatController::class, 'create'])
+        ->name('group-chats.create');
+
     Route::get('/group-chats/{chat}/messages', [GroupChatController::class, 'fetchMessages'])
         ->name('group-chats.messages');
     Route::get('/group-chats/{chat}', [GroupChatController::class, 'show'])
@@ -33,6 +36,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/chats/start/{user}', [ChatController::class, 'createOrGetPrivateChat'])->name('chats.start');
+
+
 
 Route::post('/typing', function (Request $request) {
     event(new UserTyping(auth()->user(), $request->chat_id));
